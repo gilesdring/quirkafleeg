@@ -94,7 +94,7 @@ projects.each_pair do |theirname, ourname|
       green("into"),
       red(ourname)
     ]
-    system "git clone git@github.com:#{organisation}/#{theirname}.git #{ourname}"
+    system "git clone https://github.com/#{organisation}/#{theirname}.git #{ourname}"
   else
     puts "%s %s" % [
       green("Updating"),
